@@ -1,0 +1,5 @@
+Theme name:    Charoo
+Description:   This is my theme. I have made it thus.
+Author name:   Josh Kennedy
+Author site:   http://joshkennedy.me
+License:       WTFPL (http://sam.zoy.org/wtfpl/COPYING)

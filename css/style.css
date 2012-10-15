@@ -1,0 +1,237 @@
+/* Let there be CSS. And it was good. */
+
+/* == TYPOGRAPHY == */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+
+h1, h2 {
+	font-weight: 700;
+	line-height: 1.2em;
+	letter-spacing: -.02em;
+	margin-bottom: 20px;
+}
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.3em; margin-top: 20px; }
+a h2 { color: #333; }
+a { 
+	color: #333;
+	border-bottom: 1px solid #DEDFB4;
+	background-color: #FFFFCC;
+	text-decoration: none;
+}
+p {
+	font-size: 16px;
+	line-height: 24px;
+	margin: 20px 0;
+}
+strong { font-weight: 700; }
+em { font-style: italic; }
+blockquote {
+	font-size: 18px;
+	font-style: italic;
+	padding: 20px 0 20px 40px;
+	border-left: 4px solid #879EB2;
+}
+article.post ul, article.post ol {
+	margin-left: 20px;
+	padding-left: 15px;
+}
+article.post ul { list-style: disc; }
+article.post ol { list-style: upper-roman; }
+
+/* == LAYOUT == */
+body {
+	background-color: #FFF;
+	font: 16px/24px 'PT Sans', sans-serif;
+	color: #212121;
+	min-width: 895px;
+	margin: 0;
+}
+header#main-header {
+	width: 27%;
+	padding-left: 1.5%;
+	position: fixed;
+	z-index: 1;
+	min-height: 100%;
+	min-width: 240px;
+}
+header#main-header > a {
+	background: none;
+	border: none;
+}
+header#main-header hgroup {
+	margin: 40px 30px 20px 20px;
+}
+header#main-header hgroup h1 { font-size: 2.2em; margin-bottom: 0; line-height: 95%; }
+header#main-header hgroup h2 { font-size: 14px; color: #888; margin-top: 2px; }
+header#main-header nav {
+	margin: 0 20px;
+	display: none;
+}
+div.tweets, footer div.tweets {
+	margin: 40px 0 0 20px;
+	max-width: 240px;
+	font-style: italic;
+}
+div.tweets i.birdie {
+	display: inline-block;
+	width: 15px;
+	height: 12px;
+	background: url('../img/birdie.png') no-repeat center center;
+}
+section#content {
+	margin-left: 27%;
+	min-width: 650px;
+	position: relative;
+	border-left: 1px solid #ececec;
+	min-height: 900px;
+	z-index: 99999;
+}
+article.post {
+	width: auto;
+	display: block;
+	position: relative;
+	padding: 40px 0 40px 40px;
+	border-top: 1px solid #ececec;
+	min-height: 130px;
+	overflow-x: hidden;
+}
+article figure img, article iframe, article object {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 670px;
+	float: none;
+}
+section[class^="article-"] > header {
+	padding: 20px 0 20px 40px;
+	display: block;
+	position: relative;
+	text-transform: uppercase;
+	color: #888;
+	font-weight: 700;
+	font-size: .9em;
+	line-height: 33px;
+}
+section#content article > a { text-decoration: none; }
+article.post h1, article.post h2, article.post p { max-width: 560px; }
+article.post ul, article.post ol  { max-width: 480px; }
+footer {
+	width: 27%;
+	padding-left: 1.5%;
+	position: fixed;
+	z-index: 2;
+	bottom: 10px;
+}
+footer a#attribution {
+	background: none;
+	border: none;
+	margin-right: 5px;
+}
+footer a#attribution img {
+	height: 20px;
+	width: 19px;
+}
+footer div.tweets {
+	display: none;
+}
+
+/* == LAYOUT == */
+@media all and (max-width: 999px) {
+	body {
+		min-width: 80%;
+		overflow-x: hidden;
+	}
+	header#main-header {
+		display: block;
+		position: relative;
+		height: auto;
+		width: 90%;
+		min-width: 90%;
+	}
+	header#main-header hgroup {
+		margin-left: 5%;
+	}
+	header#main-header nav { margin: 0 5% 20px; }
+	header#main-header div.tweets {
+		display: none;
+	}
+	header#date-time { display: none; }
+	section[class^="article-"] > header {
+		width: 90%;
+		padding: 20px 0 20px 5%;
+	}
+	section#content {
+		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
+		border-left: 0;
+		border-top: 1px solid #ECECEC;
+		margin-left: 0;
+		min-height: 320px;
+	}
+	article.post {
+		width: 90%;
+		max-width: 90%;
+		margin: 0 auto;
+		padding: 40px 0;
+	}
+	article.post p, article.post h2 {
+		width: 100%;
+		max-width: 100%;
+	}
+	article.post ul, article.post ol {
+		max-width: 80%;
+		width: 80%;
+	}
+	article figure img, article iframe, article object {
+		max-width: 100%;
+		height: auto;
+		width: 100%;
+	}
+	footer {
+		width: 90%;
+		position: relative;
+		left: 5%;
+		border-top: 1px solid #ECECEC;
+	}
+	footer div.tweets {
+		display: block;
+		max-width: 100%;
+		margin-left: 0;
+	}
+	pre.prettyprint {
+		max-width: 96%;
+		width: 100% !important;
+		white-space: pre-wrap;       /* css-3 */
+		white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+		white-space: -pre-wrap;      /* Opera 4-6 */
+		white-space: -o-pre-wrap;    /* Opera 7 */
+		word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	}
+}
+@media all and (min-width: 1441px) {
+	p, ul, ol { 
+		font-family: 'PT Sans', sans-serif;
+		font-size: 19px;
+		line-height: 32px;
+	}
+	h1 { font-size: 2.2em; }
+	h2 { font-size: 1.5em; margin-top: 20px; }
+	header#main-header hgroup h2 { font-size: 16px; }
+	div.tweets { max-width: 90%; font-style: italic; }
+	article figure img, article iframe, article object { width: 900px; }
+	article.post h1, article.post h2, article.post p { max-width: 780px; }
+	article.post ul, article.post ol { max-width: 680px; }
+	blockquote {
+		font-size: 22px;
+		font-style: italic;
+		padding: 30px 0 30px 50px;
+		border-left-width: 6px;
+	}
+	pre.prettyprint { 
+		width: 900px;
+		font-size: 16px;
+		line-height: 2.0;
+	}
+
+}
