@@ -15,3 +15,9 @@ You're welcome to use it however you like.
 
 
 This theme is still a WIP, so if something doesn't work, let me know.
+
+### To-do:
+
+- Add comments (Disqus? Facebook? Native?)
+- Add [simple] portfolio
+- Pull in links from [Lkd.to](http://lkd.to/)
