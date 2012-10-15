@@ -1,7 +1,4 @@
 			<footer>
-<!-- 				<div class="tweets">
-					<?php // echo get_tweets(3); ?>
-				</div> -->
 				<p>Powered by <a href="http://anchorcms.com" target="_blank">AnchorCMS</a><br>
 				Hosted by <a href="http://www.mediatemple.net#a_aid=5077c70cd4b95" target="_blank">MediaTemple (mt)</a></p>
 				<?php if(twitter_account()): ?>
@@ -44,5 +41,10 @@
 					}());
 			</script>
 			<?php endif; ?>
-		</body>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js" type="text/javascript"></script>
+		<script src="<?php echo theme_url('/js/main.js'); ?>"></script>
+		<script src="<?php echo theme_url('/js/prettify.js'); ?>"></script>
+	</body>
 </html>

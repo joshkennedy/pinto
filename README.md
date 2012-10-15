@@ -7,11 +7,11 @@ You're welcome to use it however you like.
 ---
 
 
-### Things you'll want to change:
+### Things you'll probably want to change:
 
-- Twitter username (not currently active)
-- Google Analytics code (found in `header.php`)
-- MediaTemple affiliate link - unless you'd like to help a brother out. Bills and whatnot. You can find that in `footer.php`
+- Twitter username (found in `js/main.js`)
+- Google Analytics code (found in `includes/header.php`)
+- MediaTemple affiliate link - unless you'd like to help a brother out. Bills tp pay and whatnot. You can find that in `includes/footer.php`
 
 
 This theme is still a WIP, so if something doesn't work, let me know.

@@ -18,8 +18,6 @@
 		<![endif]-->
 
 		<script>var base = '<?php echo theme_url(); ?>';</script>
-		<script src="<?php echo theme_url('/js/main.js'); ?>"></script>
-		<script src="<?php echo theme_url('/js/prettify.js'); ?>"></script>
 		
 		<meta name="viewport" content="width=device-width">
 		<meta name="generator" content="Anchor CMS <?php echo ANCHOR_VERSION; ?>">
@@ -38,18 +36,17 @@
 		<script><?php echo article_js(); ?></script>
 	<?php endif; ?>
 
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-7422463-10']);
-		_gaq.push(['_trackPageview']);
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-7422463-10']);
+			_gaq.push(['_trackPageview']);
 
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
-
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
 	</head>
 	
 	<body onload="prettyPrint()">
@@ -75,7 +72,8 @@
 				</nav>
 				<?php endif; ?>
 
-<!-- 				<div class="tweets">
-					<?php //echo get_tweets(3); ?>
-				</div> -->
+			<div id="tweets">
+				<p>Please wait while my tweets load <img src="<?php echo theme_url(); ?>/img/birdie.png" /><br>
+				If you can't wait, <a href="http://twitter.com/joshkennedy">just head right over to Twitter</a></p>
+			</div>
 		</header>
