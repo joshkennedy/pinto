@@ -1,6 +1,8 @@
 # joshkennedy-dot-me
 
-This is an edited theme for [AnchorCMS](http://anchorcms.com) that I made for personal use. 
+This is an edited theme for [AnchorCMS](http://anchorcms.com) that I made for personal use.
+
+See it in action [here](http://joshkennedy.me).
 
 You're welcome to use it however you like. 
 
@@ -15,6 +17,8 @@ You're welcome to use it however you like.
 
 
 This theme is still a WIP, so if something doesn't work, let me know.
+
+---
 
 ### To-do:
 
