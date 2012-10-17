@@ -1,6 +1,6 @@
 # joshkennedy-dot-me
 
-This is an edited theme for [AnchorCMS](http://anchorcms.com) that I made for personal use.
+This is a theme for [AnchorCMS](http://anchorcms.com) that I made for personal use.
 
 See it in action [here](http://joshkennedy.me).
 
@@ -24,4 +24,3 @@ This theme is still a WIP, so if something doesn't work, let me know.
 
 - Add comments (Disqus? Facebook? Native?)
 - Add [simple] portfolio
-- Pull in links from [Lkd.to](http://lkd.to/)
