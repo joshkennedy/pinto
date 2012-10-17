@@ -1,9 +1,5 @@
 <section id="content" class="article-home">
 
-	<header id="date-time">
-		<time datetime="<?php echo date('F j, Y'); ?>"><?php echo date('F j, Y'); ?></time>
-	</header>
-
 	<?php if(has_posts()): ?>
 			<?php while(posts()): ?>
 				<article class="post">

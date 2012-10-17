@@ -3,6 +3,17 @@
 /* == TYPOGRAPHY == */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
 
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 h1, h2 {
 	font-weight: 700;
 	line-height: 1.2em;
@@ -10,7 +21,10 @@ h1, h2 {
 	margin-bottom: 20px;
 }
 h1 { font-size: 1.8em; }
-h2 { font-size: 1.3em; margin-top: 20px; }
+h2 { 
+	font-size: 1.3em; 
+	margin-top: 20px;
+}
 a h2 { color: #333; }
 a { 
 	color: #333;
@@ -61,7 +75,7 @@ header#main-header > a {
 header#main-header hgroup {
 	margin: 40px 30px 20px 20px;
 }
-header#main-header hgroup h1 { font-size: 2.2em; margin-bottom: 0; line-height: 95%; }
+header#main-header hgroup h1 { margin-bottom: 0; line-height: 95%; }
 header#main-header hgroup h2 { font-size: 14px; color: #888; margin-top: 2px; }
 header#main-header nav {
 	margin: 0 20px;
@@ -125,6 +139,10 @@ footer {
 	z-index: 2;
 	bottom: 10px;
 }
+footer p { 
+	font-size: .85em;
+	line-height: 1.1em;
+}
 footer a#attribution {
 	background: none;
 	border: none;
@@ -135,7 +153,30 @@ footer a#attribution img {
 	width: 19px;
 }
 
-/* == LAYOUT == */
+/* == ICONS == */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+div.glyphs a {
+	font-style: normal;
+	display: inline;
+	color: #AAA;
+	background-color: #FFF;
+	border-bottom: none;
+	font-size: 22px;
+	margin-right: 5px;
+}
+a.twitter:hover { color: #00a0d1; }
+a.dribbble:hover { color: #ea4c89; }
+a.github:hover { color: #4183c4; }
+a.lastfm:hover { color: #D51007; }
+a.email:hover { color: #333; }
+
+/* == MOBILE == */
 @media all and (max-width: 999px) {
 	body {
 		min-width: 80%;
@@ -202,6 +243,8 @@ footer a#attribution img {
 		word-wrap: break-word;       /* Internet Explorer 5.5+ */
 	}
 }
+
+/* == LOS MONITORS GIGANTE == */
 @media all and (min-width: 1441px) {
 	p, ul, ol { 
 		font-family: 'PT Sans', sans-serif;

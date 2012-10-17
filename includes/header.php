@@ -57,23 +57,31 @@
 					<h1 id="logo"><?php echo site_name(); ?></h1>
 					<h2 id="description"><?php echo site_description(); ?></h2>
 				</a>
-			</hgroup>
-				<?php if(has_menu_items()): ?>
-				<nav role="navigation">
-					<ul>
-						<?php while(menu_items()): ?>
-						<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
-							<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
-								<?php echo menu_name(); ?>
-							</a>
-						</li>
-						<?php endwhile; ?>
-					</ul>
-				</nav>
-				<?php endif; ?>
+				<div class="glyphs">
+					<a href="http://twitter.com/joshkennedy" class="twitter" data-icon="&#x54;"></a>
+					<a href="http://dribbble.com/joshkennedy" class="dribbble" data-icon="&#x44;"></a>
+					<a href="http://github.com/joshkennedy" class="github" data-icon="&#x47;"></a>
+					<a href="http://last.fm/user/joshkennedy" class="lastfm" data-icon="&#x4c;"></a>
+					<a href="mailto:hello@joshkennedy.me" class="email" data-icon="&#x45;"></a>
+				</div>
 
-			<div id="tweets">
-				<p>Please wait while my tweets load <img src="<?php echo theme_url(); ?>/img/birdie.png" /><br>
-				If you can't wait, <a href="http://twitter.com/joshkennedy">just head right over to Twitter</a></p>
-			</div>
+			</hgroup>
+		<?php if(has_menu_items()): ?>
+			<nav role="navigation">
+				<ul>
+					<?php while(menu_items()): ?>
+					<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
+						<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
+							<?php echo menu_name(); ?>
+						</a>
+					</li>
+					<?php endwhile; ?>
+				</ul>
+			</nav>
+		<?php endif; ?>
+
+			<div id="tweets"></div>
+
+
+
 		</header>

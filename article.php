@@ -1,7 +1,7 @@
 <section id="content" class="article-<?php echo article_id(); ?>">
 
 	<header>
-		<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
+		<time datetime="<?php echo date(DATE_W3C, article_time()); ?>">Written <?php echo relative_time(article_time()); ?></time>
 	</header>
 
 	<article class="post">
