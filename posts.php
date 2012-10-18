@@ -3,7 +3,7 @@
 	<?php if(has_posts()): ?>
 			<?php while(posts()): ?>
 				<article class="post">
-					<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>">
+					<a href="<?php echo article_url(); ?>#disqus_thread" title="<?php echo article_title(); ?>">
 						<h1><?php echo article_title(); ?></h1>
 					</a>
 					<?php echo article_html(); ?>

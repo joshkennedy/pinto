@@ -14,12 +14,11 @@
 
 		<?php echo article_html(); ?>
 
-<!-- 		<footer class="footnote">
-			<small>This article is my <?php echo numeral(article_id()); ?> oldest. It is <?php echo count_words(article_html()); ?> words long. <?php echo article_custom_field('attribution'); ?></small>
-		</footer> -->
-
 	</article>
 	
+	<article class="post">
+		<?php include 'includes/comment_form.php'; ?>
+	</article>
+
 </section>
 
-<?php include 'includes/comment_form.php'; ?>

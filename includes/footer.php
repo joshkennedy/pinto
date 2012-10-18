@@ -48,5 +48,6 @@
 		<script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js" type="text/javascript"></script>
 		<script src="<?php echo theme_url('/js/main.js'); ?>"></script>
 		<script src="<?php echo theme_url('/js/prettify.js'); ?>"></script>
+
 	</body>
 </html>

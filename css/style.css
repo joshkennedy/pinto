@@ -132,6 +132,7 @@ section[class^="article-"] > header {
 section#content article > a { text-decoration: none; }
 article.post h1, article.post h2, article.post p { max-width: 560px; }
 article.post ul, article.post ol  { max-width: 480px; }
+div#disqus_thread { max-width: 95%; }
 footer {
 	width: 27%;
 	padding-left: 1.5%;

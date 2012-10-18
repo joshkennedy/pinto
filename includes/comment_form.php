@@ -1,49 +1,15 @@
 <?php if(comments_open()): ?>
-    <section class="comments">
-    
-        <h1><?php echo total_comments() . pluralise(total_comments(), ' comment'); ?> <a href="#comment" title="Contribute to the discussion!">Add your own</a></h1>
-    
-        <?php if(has_comments()): ?>
-        <ul class="commentlist">
-            <?php while(comments()): ?>
-            <li class="comment" id="comment-<?php echo comment_id(); ?>">
-                <h2><?php echo comment_name(); ?></h2>
-                <time><?php echo relative_time(comment_time()); ?></time> 
-                
-                <div class="content">
-                    <?php echo comment_text(); ?>
-                </div>
-            </li>
-            <?php endwhile; ?>
-        </ul>
-        <?php endif; ?>
-        
-        <form id="comment" class="commentform" method="post" action="<?php echo current_url(); ?>#comment">
-            <legend>Add your comments</legend>
-            
-            <?php echo comment_form_notifications(); ?>
-            
-            <p class="name">
-                <label for="name">Your name:</label>
-                <?php echo comment_form_input_name(); ?>
-            </p>
-            
-            <p class="email">
-                <label for="email">Your email address:</label>
-                <em>Will never be published.</em>
-                <?php echo comment_form_input_email(); ?>                
-            </p>
-            
-            <p class="textarea">
-                <label for="text">Your comment:</label>
-                <em>Allowed HTML: <code>&lt;a&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;blockquote&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;p&gt;</code> and <code>&lt;pre&gt;</code>.</em>
-                <?php echo comment_form_input_text(); ?>
-            </p>
-            
-            <p class="submit">
-                <?php echo comment_form_button(); ?>
-            </p>
-        </form>
-    
-    </section>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		var disqus_shortname = 'joshkennedy';
+		var disqus_title = '<?php echo article_title(); ?>';
+
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 <?php endif; ?>
