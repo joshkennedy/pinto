@@ -14,7 +14,8 @@ Have fun.
 
 - Twitter username (found in `js/main.js`)
 - Google Analytics code (found in `includes/header.php`)
-- MediaTemple affiliate link - unless you'd like to help a brother out. Bills tp pay and whatnot. You can find that in `includes/footer.php`
+- MediaTemple affiliate link - unless you'd like to help a brother out. Bills to pay and whatnot. You can find that in `includes/footer.php`
+- Disqus embed (found in `includes/comment_form.php`) [AnchorCMS comes with its own comments functionality, so you'll need to grab that from the default theme]
 
 
 This theme is still a WIP, so if something doesn't work, let me know.
