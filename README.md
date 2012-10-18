@@ -1,10 +1,11 @@
-# joshkennedy-dot-me
+# joshkennedy.me
+### a lightweight theme for AnchorCMS
 
 This is a theme for [AnchorCMS](http://anchorcms.com) that I made for personal use.
 
-See it in action [here](http://joshkennedy.me).
+[See it in action](http://joshkennedy.me) or [Download](https://github.com/joshkennedy/joshkennedy-dot-me/zipball/master)
 
-You're welcome to use it however you like. 
+Have fun.
 
 ---
 
@@ -22,5 +23,4 @@ This theme is still a WIP, so if something doesn't work, let me know.
 
 ### To-do:
 
-- Add comments (Disqus? Facebook? Native?)
 - Add [simple] portfolio
