@@ -31,6 +31,19 @@ a {
 	border-bottom: 1px solid #DEDFB4;
 	background-color: #FFFFCC;
 	text-decoration: none;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	transition: all .3s linear;
+}
+a:hover {
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	transition: all .1s linear;
+	background-color: #FFFFED;
 }
 p {
 	font-size: 16px;
@@ -94,6 +107,23 @@ div#tweets i.birdie {
 	width: 15px;
 	height: 12px;
 	background: url('../img/birdie.png') no-repeat center center;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	transition: all .1s linear;
+}
+div#tweets i.birdie:hover {
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	transition: all .1s linear;
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
 }
 section#content {
 	margin-left: 27%;
@@ -170,6 +200,10 @@ div.glyphs a {
 	border-bottom: none;
 	font-size: 22px;
 	margin-right: 5px;
+}
+div.glyphs a:hover {
+	position: relative;
+	top: -2px;
 }
 a.twitter:hover { color: #00a0d1; }
 a.dribbble:hover { color: #ea4c89; }
