@@ -7,6 +7,7 @@
 						<h1><?php echo article_title(); ?></h1>
 					</a>
 					<?php echo article_html(); ?>
+					<h2><a href="<?php echo article_url(); ?>#disqus_thread">Leave a comment &raquo;</a></h2>
 				</article>
 			<?php endwhile; ?>
 

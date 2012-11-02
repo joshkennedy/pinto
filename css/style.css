@@ -74,7 +74,7 @@ body {
 	margin: 0;
 }
 header#main-header {
-	width: 27%;
+	width: 25%;
 	padding-left: 1.5%;
 	position: fixed;
 	z-index: 1;
@@ -86,16 +86,27 @@ header#main-header > a {
 	border: none;
 }
 header#main-header hgroup {
-	margin: 40px 30px 20px 20px;
+	margin: 40px 30px 20px 10px;
 }
 header#main-header hgroup h1 { margin-bottom: 0; line-height: 95%; }
 header#main-header hgroup h2 { font-size: 14px; color: #888; margin-top: 2px; }
 header#main-header nav {
-	margin: 0 20px;
+	margin: 0 10px;
 	display: none;
 }
+header h3 {
+	border-top: 1px solid #ECECEC;
+	padding: 20px 0 0 10px;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+header h3 i.dribbble {
+	color: #ea4c89;
+	font-size: .8em;
+}
 div#tweets {
-	margin: 40px 0 0 20px;
+	margin: 0 0 0 10px;
 	max-width: 240px;
 	font-style: italic;
 }
@@ -125,8 +136,49 @@ div#tweets i.birdie:hover {
 	-ms-transform: rotate(360deg);
 	transform: rotate(360deg);
 }
+div.hcs {
+	overflow: hidden;
+	text-align: left;
+}
+div.hcs ul {
+	margin-left: 10px;
+}
+div.hcs ul li {
+	display: block;
+	width: 47%;
+	position: relative;
+	float: left;
+	box-sizing: border-box;
+	padding: 0 5px 0 0;
+	margin-bottom: 5px;
+}
+div.hcs ul li img {
+	width: 100%;
+	height: auto;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	font-size: 0;
+	float: left;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	transition: all .1s linear;
+}
+div.hcs ul li img:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	transition: all .1s linear;
+}
 section#content {
-	margin-left: 27%;
+	margin-left: 26.5%;
 	min-width: 650px;
 	position: relative;
 	border-left: 1px solid #ececec;
@@ -173,6 +225,7 @@ footer {
 footer p { 
 	font-size: .85em;
 	line-height: 1.1em;
+	margin-left: 10px;
 }
 footer a#attribution {
 	background: none;
@@ -229,7 +282,11 @@ a.email:hover { color: #333; }
 	}
 	header#main-header nav { margin: 0 5% 20px; }
 	header#date-time { display: none; }
+	header h3 { margin-left: 5%; }
 	div#tweets { display: none; }
+	div.hcs { padding-left: 5%; }
+	div.hcs ul { margin: 0; }
+	div.hcs ul li { width: 50%; margin: 0; padding: 0 5% 5% 0; }
 	section[class^="article-"] > header {
 		width: 90%;
 		padding: 20px 0 20px 5%;
@@ -267,7 +324,10 @@ a.email:hover { color: #333; }
 		position: relative;
 		left: 5%;
 		border-top: 1px solid #ECECEC;
+		margin-left: 0;
+		padding-left: 0;
 	}
+	footer p { margin-left: 0; }
 	pre.prettyprint {
 		max-width: 96%;
 		width: 100% !important;

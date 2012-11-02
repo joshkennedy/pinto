@@ -80,8 +80,9 @@
 			</nav>
 		<?php endif; ?>
 
-			<div id="tweets"></div>
-
-
+			<h3>Dribbble Shots <i class="dribbble" data-icon="&#x44;"></i></h3>
+			<div id="dribbble"></div>
+			<script type="text/javascript" src = "https://halfcourtshot.googlecode.com/svn/tags/101129.1100/js/half-court-shot.jsapp.mh.min.js"></script>
+			<script type="text/javascript">var hcs = new HalfCourtShot({ jersey: "joshkennedy", shots: 4, goal: 'dribbble' });</script>
 
 		</header>

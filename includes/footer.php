@@ -2,10 +2,8 @@
 				<p>Powered by <a href="http://anchorcms.com" target="_blank">AnchorCMS</a> - <a href="https://github.com/joshkennedy/joshkennedy-dot-me">Get this theme!</a><br>
 				Hosted by <a href="http://www.mediatemple.net#a_aid=5077c70cd4b95" target="_blank">MediaTemple (mt)</a></p>
 				<p>
-				<?php if(twitter_account()): ?>
-					<a href="<?php echo twitter_url(); ?>">@<?php echo twitter_account(); ?></a>
-				<?php endif; ?>
-					<a href="<?php echo rss_url(); ?>">RSS</a>
+					<a href="https://twitter.com/joshkennedy" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @joshkennedy</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</p>
 
 			<?php if(is_debug()): ?>
