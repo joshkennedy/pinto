@@ -20,12 +20,11 @@
 		<script>var base = '<?php echo theme_url(); ?>';</script>
 		
 		<meta name="viewport" content="width=device-width">
-		<meta name="generator" content="Anchor CMS <?php echo ANCHOR_VERSION; ?>">
 		
 		<meta property="og:title" content="<?php echo site_name(); ?>">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="<?php echo absolute_url(); ?>">
-		<meta property="og:image" content="<?php echo absolute_url(theme_url('img/og_image.gif')); ?>">
+		<meta property="og:url" content="<?php echo full_url(); ?>">
+		<meta property="og:image" content="<?php echo full_url(theme_url('img/og_image.gif')); ?>">
 		<meta property="og:site_name" content="<?php echo site_name(); ?>">
 		<meta property="og:description" content="<?php echo site_description(); ?>">
 		

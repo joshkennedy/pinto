@@ -1,3 +1,5 @@
+<?php theme_include('header'); ?>
+
 <section id="content" class="article-home">
 
 	<?php if(has_posts()): ?>
@@ -18,3 +20,5 @@
 	<?php endif; ?>
 
 </section>
+
+<?php theme_include('footer'); ?>

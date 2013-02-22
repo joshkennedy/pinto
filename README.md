@@ -1,9 +1,9 @@
-# joshkennedy.me
-### a lightweight theme for AnchorCMS
+# Pinto
+### A lightweight blogging theme for AnchorCMS
 
-This is a theme for [AnchorCMS](http://anchorcms.com) that I made for personal use.
+This is a theme for [AnchorCMS](http://anchorcms.com). It is ready and willing to please.
 
-[See it in action](http://joshkennedy.me) or [download it](https://github.com/joshkennedy/joshkennedy-dot-me/zipball/master)
+[Download the zip](https://github.com/joshkennedy/joshkennedy-dot-me/zipball/master)
 
 Have fun.
 
@@ -13,10 +13,10 @@ Have fun.
 ### Things you'll probably want to change:
 
 - Twitter username (found in `js/main.js`)
-- Google Analytics code (found in `includes/header.php`)
-- MediaTemple affiliate link - unless you'd like to help a brother out. Bills to pay and whatnot. You can find that in `includes/footer.php`
-- Disqus embed (found in `includes/comment_form.php`) [AnchorCMS comes with its own comments functionality, so you'll need to grab that from the default theme]
-- Dribbble feed username - found in `includes/header.php`
+- Google Analytics code (found in `header.php`)
+- MediaTemple affiliate link - unless you'd like to help a brother out. Bills to pay and whatnot. You can find that in `footer.php`
+- Disqus embed (found in `comment_form.php`) [AnchorCMS comes with its own comments functionality, so you'll need to grab that from the default theme]
+- Dribbble feed username - found in `header.php`
 
 
 If you have any questions, hit me up [on twitter](http://twitter.com/joshkennedy).

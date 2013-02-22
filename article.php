@@ -1,3 +1,5 @@
+<?php theme_include('header'); ?>
+
 <section id="content" class="article-<?php echo article_id(); ?>">
 
 	<header>
@@ -17,8 +19,9 @@
 	</article>
 	
 	<article class="post">
-		<?php include 'includes/comment_form.php'; ?>
+		<?php include 'comment_form.php'; ?>
 	</article>
 
 </section>
 
+<?php theme_include('footer'); ?>
